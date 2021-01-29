@@ -26,8 +26,8 @@ function makeAdder(x) {
 var add5 = makeAdder(5);
 var add10 = makeAdder(10);
 
-console.log(add5(2)); // 7
-console.log(add10(2)); // 12
+// console.log(add5(2)); // 7
+// console.log(add10(2)); // 12
 
 function name() {
   var privateCounter = 0;
@@ -65,6 +65,9 @@ var Counter = (function () {
   };
 })();
 
+console.log(Counter.value());//0
+Counter.increment();
+console.log(Counter.value());//1
 let test = function () {
   return {
     increment: function () {
@@ -78,5 +81,3 @@ let test = function () {
     },
   };
 };
-
-console.log();

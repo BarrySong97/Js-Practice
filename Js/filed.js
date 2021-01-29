@@ -24,10 +24,10 @@ class Test  {
 let test = new Test();
 function buildUrl() {
   let qs = "?debug=true";
-  with (test) {
-    // let url = href  + qs;
-    var url = href + qs;
-  }
+  // with (test) {
+  //   // let url = href  + qs;
+  //   var url = href + qs;
+  // }
   return url;
 }
 

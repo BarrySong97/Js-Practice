@@ -2,7 +2,7 @@
 function greeter(person) {
     return "hello" + person;
 }
-var user = "barry allen";
+const user = "barry allen";
 greeter(user);
 var Direction;
 (function (Direction) {
@@ -11,5 +11,5 @@ var Direction;
     Direction[Direction["Left"] = 2] = "Left";
     Direction[Direction["Right"] = 3] = "Right";
 })(Direction || (Direction = {}));
-var a = Direction.Up;
+const a = Direction.Up;
 console.log(Direction[0]);

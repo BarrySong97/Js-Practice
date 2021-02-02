@@ -100,9 +100,18 @@ function Person2(name, age, job) {
 }
 let person2 = new Person2("Greg", 27, "Doctor");
 person2.sayName(); // Greg
-let keys = Object.keys(Person2.prototype); 
+let keys = Object.keys(Person2.prototype);
 console.log(keys);
-let keys2 = Object.keys(person2); 
+let keys2 = Object.keys(person2);
 console.log(keys2);
 // let key3 = Object.getOwnPropertyNames(person2.prototype);
 // console.log(key3);
+
+Person.prototype = {
+    name: "Nicholas",
+    age: 29,
+    job: "Software Engineer",
+    sayName() {
+        console.log(this.name);
+    }
+};

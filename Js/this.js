@@ -1,4 +1,4 @@
-globalThis.a = 2;
+// globalThis.a = 2;
 let Test = {
   a: 1,
   func1: () => {
@@ -38,7 +38,21 @@ func4();
 
 let a = 0;
 let func5 = () => {
-    console.log("箭头函数 a: " + this.a)
+  console.log("箭头函数 a: " + this.a)
 }
 
 func5()
+
+
+function Func6() {
+this.a = 3;
+  
+  
+}
+Func6.prototype.func7 = function () {
+  console.log(this.a);
+}
+
+let f6 = new Func6();
+console.log(f6);
+f6.func7();

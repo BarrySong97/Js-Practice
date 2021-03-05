@@ -17,9 +17,9 @@ func3.foo(2); // 1
 func3.foo(3); // 1
 
 
-class Test {
-  href = "baidu.com"
-}
+// class Test {
+//   href = "baidu.com"
+// }
 
 // let test = new Test();
 // function buildUrl() {
